@@ -8,7 +8,7 @@ const presentDrink = async () => {
 
   const id = localStorage.getItem("list")
   if (id === null) {
-    document.location.href = "index.html"
+    window.location = "index.html"
   } else {
     const result = url + id
     // affiche les infos du cocktail
